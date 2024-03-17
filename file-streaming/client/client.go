@@ -3,7 +3,7 @@ package main
 import (
 	"context"
 	"fmt"
-	proto "github.com/bilalhaider789/go-check/file-streaming/proto"
+	proto "github.com/bilalhaider789/golang-grpc/file-streaming/proto"
 	"io"
 	"log"
 	"os"

@@ -9,7 +9,7 @@ import (
 	"os/signal"
 	"time"
 
-	blog "github.com/bilalhaider789/go-check/blog-mongo/proto"
+	blog "github.com/bilalhaider789/golang-grpc/blog-mongo/proto"
 	"go.mongodb.org/mongo-driver/bson"
 	"go.mongodb.org/mongo-driver/bson/primitive"
 	"go.mongodb.org/mongo-driver/mongo"

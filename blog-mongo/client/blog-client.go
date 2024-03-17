@@ -7,7 +7,7 @@ import (
 	"io"
 	"log"
 
-	blog "github.com/bilalhaider789/go-check/blog-mongo/proto"
+	blog "github.com/bilalhaider789/golang-grpc/blog-mongo/proto"
 
 	"google.golang.org/grpc"
 	"google.golang.org/grpc/credentials"
