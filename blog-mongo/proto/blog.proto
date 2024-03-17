@@ -1,0 +1,62 @@
+syntax = "proto3";
+
+package blog;
+
+option go_package= "/blog-mongo/proto";
+
+message Blog{
+    string id = 1;
+    string userId = 2;
+    string title = 3;
+    string content = 4;
+}
+
+message CreateBlogRequest {
+    Blog blog = 1;
+}
+
+message CreateBlogResponse {
+    Blog blog = 1; 
+}
+
+
+message UpdateBlogRequest {
+    Blog blog = 1;
+}
+
+message UpdateBlogResponse {
+    Blog blog = 1; 
+}
+
+message GetBlogRequest {
+    string userId = 1;
+}
+
+message GetBlogResponse {
+    Blog blog = 1; 
+}
+
+
+message DeleteBlogRequest {
+    string userId = 1;
+}
+
+message DeleteBlogResponse {
+    string userId = 1; 
+}
+
+message StreamBlogRequest {
+}
+
+message StreamBlogResponse {
+    Blog blog = 1; 
+}
+service BlogService {
+    rpc CreateBlog (CreateBlogRequest) returns (CreateBlogResponse);
+    rpc GetBlog (GetBlogRequest) returns (GetBlogResponse);
+    rpc UpdateBlog (UpdateBlogRequest) returns (UpdateBlogResponse);
+    rpc DeleteBlog (DeleteBlogRequest) returns (DeleteBlogResponse);
+    rpc StreamBlog (StreamBlogRequest) returns (stream StreamBlogResponse);
+
+
+}
