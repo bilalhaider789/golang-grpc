@@ -1,4 +1,4 @@
-module github.com/bilalhaider789/go-check
+module github.com/bilalhaider789/golang-grpc
 
 go 1.22.0
 
